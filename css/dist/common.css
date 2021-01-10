@@ -1,0 +1,22 @@
+@import '../../font/font_67r6k21nfq9/iconfont.css';
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: "微软雅黑" !important;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #c72a2f;
+}
+.displaySetBlock {
+  display: block !important;
+}
+.marginTop165px {
+  margin-top: 165px !important;
+}

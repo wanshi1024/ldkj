@@ -1,0 +1,151 @@
+.part-1 {
+  margin-top: -1px;
+  position: relative;
+}
+.part-1 img {
+  width: 100%;
+}
+.part-1 div {
+  position: absolute;
+  left: 20%;
+  bottom: 12%;
+}
+.part-1 div h2 {
+  font-size: 48px;
+  color: white;
+  font-weight: normal;
+}
+.part-1 div i {
+  display: inline-block;
+  height: 3px;
+  width: 84px;
+  background: #e10033;
+  margin-top: 2%;
+}
+@media (max-width: 1240px) {
+  .part-1 div h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 700px) {
+  .part-1 div {
+    left: 5%;
+  }
+  .part-1 div h2 {
+    font-size: 20px;
+  }
+}
+.page-title {
+  color: #666666;
+  text-align: center;
+  font-size: 2em;
+  margin: 50px 0;
+}
+.part-2 {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #edf0f5;
+}
+.part-2 img {
+  width: 100%;
+}
+.part-2 .text {
+  padding: 2em 1em;
+}
+.part-2 .text p {
+  line-height: 1.8em;
+  font-size: 18px;
+}
+.certificateHonor {
+  margin-top: 2em;
+}
+.certificateHonor ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.certificateHonor ul li {
+  position: relative;
+  cursor: pointer;
+  margin: 2%;
+}
+.certificateHonor ul li:hover .recruit-img img {
+  transform: scale(1.2);
+}
+.certificateHonor ul li .bg-img {
+  max-width: 100%;
+}
+.certificateHonor ul li .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.certificateHonor ul li .content .recruit-img {
+  width: 80%;
+}
+.certificateHonor ul li .content .recruit-img img {
+  width: 100%;
+  transition: all 1s;
+}
+.certificateHonor ul li .content .text {
+  text-align: center;
+  width: 80%;
+  margin-top: 2em;
+}
+.certificateHonor ul li .content .text p {
+  color: #fff;
+  font-size: 18px;
+}
+.recruit {
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-bottom: 5em;
+  background-color: #edf0f5;
+  width: 80%;
+}
+@media (max-width: 970px) {
+  .recruit {
+    width: 90%;
+  }
+  .recruit th {
+    font-size: 20px !important;
+  }
+  .recruit td {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 700px) {
+  .recruit {
+    width: 98%;
+  }
+  .recruit th {
+    font-size: 16px !important;
+  }
+  .recruit td {
+    font-size: 12px !important;
+  }
+}
+.recruit thead th {
+  font-size: 24px;
+  line-height: 4em;
+}
+.recruit tbody tr {
+  background-color: #edf0f5;
+  cursor: pointer;
+}
+.recruit tbody tr td {
+  font-size: 20px;
+  line-height: 4em;
+  text-align: center;
+}
+.recruit tbody tr:nth-child(odd) {
+  background: #fff;
+}

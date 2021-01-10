@@ -1,0 +1,222 @@
+.part-1 {
+  margin-top: -1px;
+  position: relative;
+}
+.part-1 img {
+  width: 100%;
+}
+.part-1 div {
+  position: absolute;
+  left: 20%;
+  bottom: 12%;
+}
+.part-1 div h2 {
+  font-size: 48px;
+  color: white;
+  font-weight: normal;
+}
+.part-1 div i {
+  display: inline-block;
+  height: 3px;
+  width: 84px;
+  background: #e10033;
+  margin-top: 2%;
+}
+@media (max-width: 1240px) {
+  .part-1 div h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 700px) {
+  .part-1 div {
+    left: 5%;
+  }
+  .part-1 div h2 {
+    font-size: 20px;
+  }
+}
+.part-2 .news-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.part-2 .news-list a {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 10px;
+  border-bottom: 1px solid #d7d7d7;
+}
+.part-2 .news-list a:hover .title {
+  font-weight: bold;
+  color: #c7000a !important;
+}
+.part-2 .news-list a img {
+  width: 490px;
+  height: 280px;
+  transition: all 0.4s;
+}
+.part-2 .news-list a .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 60px;
+  width: 788px;
+  transition: all 0.4s;
+}
+.part-2 .news-list a .text .title {
+  font-size: 26px;
+  color: #4e5258;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+.part-2 .news-list a .text .date {
+  margin: 40px 0;
+  color: #707070;
+  font-size: 20x;
+  transition: all 0.4s;
+}
+.part-2 .news-list a .text .description {
+  color: #707070;
+  font-size: 20px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.part-2 .news-list a:nth-of-type(3) .text .title {
+  color: #c7000a !important;
+}
+@media (max-width: 1400px) {
+  .part-2 .news-list a img {
+    width: 400px;
+    height: 200px;
+  }
+  .part-2 .news-list a .text {
+    margin-left: 30px;
+    width: 650px;
+  }
+  .part-2 .news-list a .text .title {
+    font-size: 24px;
+  }
+  .part-2 .news-list a .text .date {
+    font-size: 18px;
+  }
+  .part-2 .news-list a .text .description {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1124px) {
+  .part-2 .news-list a {
+    flex-direction: column;
+  }
+  .part-2 .news-list a img {
+    width: 100%;
+    height: auto;
+  }
+  .part-2 .news-list a .text {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .part-2 .news-list a .text .date {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 780px) {
+  .part-2 .news-list {
+    padding: 10px;
+  }
+  .part-2 .news-list a .text .title {
+    font-size: 18px;
+  }
+  .part-2 .news-list a .text .date,
+  .part-2 .news-list a .text .description {
+    font-size: 14px;
+  }
+}
+.part-2 .paging {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.part-2 .paging > * {
+  margin: 0 5px;
+}
+.part-2 .paging ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.part-2 .paging ul .to-first-page,
+.part-2 .paging ul .to-last-page {
+  cursor: pointer;
+  margin: 0 20px;
+}
+.part-2 .paging ul li {
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f0;
+  border-radius: 25%;
+  color: #c7000a !important;
+  cursor: pointer;
+}
+.part-2 .paging ul li.active {
+  background-color: #c7000a !important;
+  color: white !important;
+}
+.part-2 .paging ul .next,
+.part-2 .paging ul .prev {
+  margin: 0 20px;
+}
+.part-2 .paging input {
+  width: 50px;
+  height: 30px;
+  outline: none;
+  margin: 0 10px;
+}
+.part-2 .paging .go {
+  width: 40px;
+  height: 40px;
+  background-color: #c7000a !important;
+  border-radius: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+@media (max-width: 790px) {
+  .part-2 .paging .to-first-page,
+  .part-2 .paging .to-last-page {
+    margin: 0 10px !important;
+  }
+  .part-2 .paging ul {
+    margin: 0 !important;
+  }
+  .part-2 .paging ul .next,
+  .part-2 .paging ul .prev {
+    margin: 0 5px !important;
+  }
+}
+@media (max-width: 500px) {
+  .part-2 .paging {
+    display: block;
+    text-align: center;
+  }
+  .part-2 .paging ul {
+    margin: 10px 0 !important;
+  }
+  .part-2 .paging .go {
+    width: 36px;
+    transform: translate(280px, -38px);
+  }
+}

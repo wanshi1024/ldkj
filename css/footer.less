@@ -1,0 +1,143 @@
+@baseColor: #c72a2f;
+@textColor: #8b8b8b;
+
+footer {
+    background: #404143;
+    padding: 3%;
+
+    .top {
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .footer-nav {
+            a {
+                text-decoration: none;
+                transition: 0.3s all;
+
+
+                &:hover {
+                    color: @baseColor  !important;
+                }
+            }
+
+            ul {
+                &>li {
+                    display: inline-block;
+                    margin-right: 100px;
+                    transition: all .4s;
+
+                    @media (max-width: 1280px) {
+                        margin-right: 50px;
+                    }
+                }
+
+                li {
+                    span {
+                        a {
+                            color: rgb(196, 192, 192);
+                            font-size: 16px;
+                        }
+                    }
+
+                    ol {
+                        li {
+                            a {
+                                color: @textColor;
+                                font-size: 14px;
+                            }
+
+                            margin-top: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p {
+                color: @textColor;
+                margin-top: 24px;
+            }
+
+        }
+    }
+
+    /*****/
+    @media (max-width:860px) {
+        .top {
+            display: block;
+
+            .footer-nav {
+                ul {
+                    li {
+                        margin-top: 20px;
+                        display: block;
+
+                        span {
+                            a {
+
+                                font-size: 16px;
+                            }
+                        }
+
+                        ol {
+                            display: flex;
+                            justify-content: flex-start;
+
+                            li {
+                                a {
+
+                                    font-size: 14px;
+                                }
+
+                                margin-top: 10px;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*****/
+    .bottom {
+        margin-top: 20px;
+        border-top: 1px solid @textColor;
+        font-size: 14px;
+        padding-bottom: 3%;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .left {
+            margin-top: 20px;
+            color: @textColor;
+
+            a {
+                color: @textColor;
+            }
+        }
+
+        .right {
+            margin-top: 20px;
+
+            span {
+                color: @textColor;
+
+                a {
+                    color: @textColor;
+                }
+            }
+        }
+    }
+
+
+}

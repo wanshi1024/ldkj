@@ -1,0 +1,49 @@
+@baseColor: #c72a2f;
+
+.swiper-pagination-bullet {
+    opacity: 1;
+    background-color: #fff;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: @baseColor;
+    outline: none;
+}
+
+
+.banner {
+
+
+    .swiper-container {
+        .swiper-wrapper {
+            .swiper-slide {
+                img {
+                    max-width: 100%;
+                }
+
+                a {
+                    position: absolute;
+                    left: 14%;
+                    top: 50%;
+                    background-color: #c7000a;
+                    color: #fff;
+                    width: 156px;
+                    height: 38px;
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.4s;
+                }
+
+                @media (max-width:1124px) {
+                    a {
+                        width: 80px;
+                        height: 30px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
