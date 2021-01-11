@@ -5,7 +5,7 @@ $(function () {
     // 图片懒加载
     FunLazy({
         autoCheckChange: true,
-        // effect: "fadeIn",
+        effect: "fadeIn",
         useErrorImagePlaceholder: true,
         // onSuccess(elem, src) {
         //     console.log(elem, src);
